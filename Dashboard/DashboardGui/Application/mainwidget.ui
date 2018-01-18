@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="CDPBaseMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main Window</string>
+  </property>
+  <property name="msgBoxBgSvg">
+   <string>:/themes/flat_light/backgrounds/bgMsgBox.svg</string>
+  </property>
+  <property name="msgBoxBtnSvg">
+   <string>:/themes/flat_light/buttons/buttonPlain.svg</string>
+  </property>
+  <property name="themeNight">
+   <string>flat_dark</string>
+  </property>
+  <property name="themeDay">
+   <string>flat_light</string>
+  </property>
+  <property name="numPadName" stdset="0">
+   <string>CDPBaseNumPad</string>
+  </property>
+  <property name="keyPadName" stdset="0">
+   <string>CDPBaseKeyPad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="CDPBaseTitle" name="cdpBaseTitle">
+      <property name="titleText">
+       <string>Temperature readings</string>
+      </property>
+      <property name="unitTextShow" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="CDPBaseBar" name="cdpBaseBar_2">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="tickPos">
+         <enum>CDPBaseTickMarks::TicksBelow</enum>
+        </property>
+        <property name="majorTicks">
+         <double>31.000000000000000</double>
+        </property>
+        <property name="minorTicks">
+         <number>1</number>
+        </property>
+        <property name="majorTickLength">
+         <number>25</number>
+        </property>
+        <property name="minorTickLength">
+         <number>17</number>
+        </property>
+        <property name="majorTickWidth">
+         <number>1</number>
+        </property>
+        <property name="numPos">
+         <enum>CDPBaseTickMarks::NumbersAutoRight</enum>
+        </property>
+        <property name="alarmShow" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="NormalColor">
+         <color>
+          <red>0</red>
+          <green>187</green>
+          <blue>229</blue>
+         </color>
+        </property>
+        <property name="valueMinNormal">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="valueMaxNormal">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="WarningColor">
+         <color>
+          <red>14</red>
+          <green>248</green>
+          <blue>30</blue>
+         </color>
+        </property>
+        <property name="valueMinWarning">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="valueMaxWarning">
+         <double>23.000000000000000</double>
+        </property>
+        <property name="WarningHighColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="valueMinWarningHigh">
+         <double>23.000000000000000</double>
+        </property>
+        <property name="valueMaxWarningHigh">
+         <double>26.000000000000000</double>
+        </property>
+        <property name="valueMinError">
+         <double>26.000000000000000</double>
+        </property>
+        <property name="valueMaxError">
+         <double>30.000000000000000</double>
+        </property>
+        <property name="alarmIndicatorsRight" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="fillStartValueEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="maxValue">
+         <double>30.000000000000000</double>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string>DashboardApp.OneWireIOServer.OneWireSensor1.Value</string>
+        </property>
+        <property name="cdpStyleRouting" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="CDPBaseLabel" name="cdpBaseLabel_2">
+        <property name="text">
+         <string>Sensor 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="CDPBaseLabel" name="cdpBaseLabel">
+        <property name="text">
+         <string>Sensor 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="CDPBaseBar" name="cdpBaseBar">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="tickPos">
+         <enum>CDPBaseTickMarks::TicksBelow</enum>
+        </property>
+        <property name="majorTicks">
+         <double>31.000000000000000</double>
+        </property>
+        <property name="minorTicks">
+         <number>1</number>
+        </property>
+        <property name="majorTickLength">
+         <number>25</number>
+        </property>
+        <property name="minorTickLength">
+         <number>17</number>
+        </property>
+        <property name="majorTickWidth">
+         <number>1</number>
+        </property>
+        <property name="numPos">
+         <enum>CDPBaseTickMarks::NumbersAutoRight</enum>
+        </property>
+        <property name="alarmShow" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="NormalColor">
+         <color>
+          <red>0</red>
+          <green>187</green>
+          <blue>229</blue>
+         </color>
+        </property>
+        <property name="valueMinNormal">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="valueMaxNormal">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="WarningColor">
+         <color>
+          <red>14</red>
+          <green>248</green>
+          <blue>30</blue>
+         </color>
+        </property>
+        <property name="valueMinWarning">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="valueMaxWarning">
+         <double>23.000000000000000</double>
+        </property>
+        <property name="WarningHighColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="valueMinWarningHigh">
+         <double>23.000000000000000</double>
+        </property>
+        <property name="valueMaxWarningHigh">
+         <double>26.000000000000000</double>
+        </property>
+        <property name="valueMinError">
+         <double>26.000000000000000</double>
+        </property>
+        <property name="valueMaxError">
+         <double>30.000000000000000</double>
+        </property>
+        <property name="alarmIndicatorsRight" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="maxValue">
+         <double>30.000000000000000</double>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string>DashboardApp.OneWireIOServer.OneWireSensor</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseTitle</class>
+   <extends>CDPBaseContainer</extends>
+   <header>CDPBaseWidgets/CDPBaseTitle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseBar</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseBar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

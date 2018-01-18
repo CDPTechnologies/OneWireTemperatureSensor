@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjectConfiguration>
+<!-- Written by CDPStudio 1.4.0, 2018-01-18T12:28:24. -->
+<qtcreator>
+ <data>
+  <variable>ProjectManagerSettings</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="ApplicationSettings">
+    <value type="QString" key="DeployDirectory">/home/pi/Dashboard/DashboardApp</value>
+    <value type="QString" key="DeviceId">192.168.170.202Dashboardwireless_32768</value>
+    <value type="QString" key="TargetFriendlyName">Raspbian Jessie 32bit</value>
+   </valuemap>
+  </valuemap>
+ </data>
+</qtcreator>
