@@ -1,0 +1,3 @@
+[submodule "OneWireIO"]
+	path = OneWireIO
+	url = https://github.com/CDPTechnologies/OneWireIO.git

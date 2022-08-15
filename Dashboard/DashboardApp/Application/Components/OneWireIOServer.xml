@@ -16,7 +16,6 @@
   </Alarms>
 
   <Timers>
-    <Timer Description='Timer to measure CDPComponent processing.' Model='CDPTimer' Name='ProcessTimer'></Timer>
     <Timer Description='Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout.' Model='CDPParameterTimer' Name='SignalTimeoutTimer'></Timer>
   </Timers>
 
@@ -25,11 +24,13 @@
   </Parameters>
 
   <OneWireSensors>
-    <OneWireSensor Input='0' Model='OneWireIO.OneWireSensor' Name='OneWireSensor' SensorID='28-0415a3506fff' Type='double' Value='0'  InternalValue='0'>
+    <OneWireSensor Input='0' Model='OneWireIO.OneWireSensor' Name='OneWireSensor1' SensorID='28-0415a3506fff' Type='double' Value='0'  InternalValue='0'>
       <Operator Description='Divide signal with arguments operator' Model='Automation.DivOperator&lt;double&gt;' Name='DivOperator' Type='double'>
-        <Argument Description='Divisor' Model='Argument&lt;double&gt;' Name='Argument' Type='double' Value='1000'  Routing=''></Argument></Operator></OneWireSensor>
-    <OneWireSensor Input='0' Model='OneWireIO.OneWireSensor' Name='OneWireSensor1' SensorID='28-0415a30680ff' Type='double' Value='0'  InternalValue='0'>
+        <Argument Description='Divisor' Model='Argument&lt;double&gt;' Name='Argument' Type='double' Value='1000'  Routing='' CppName="" Input="1"></Argument>
+        <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="1"></Argument></Operator></OneWireSensor>
+    <OneWireSensor Input='0' Model='OneWireIO.OneWireSensor' Name='OneWireSensor2' SensorID='28-0415a30680ff' Type='double' Value='0'  InternalValue='0'>
       <Operator Description='Divide signal with arguments operator' Model='Automation.DivOperator&lt;double&gt;' Name='DivOperator' Type='double'>
-        <Argument Description='Divisor' Model='Argument&lt;double&gt;' Name='Argument' Type='double' Value='1000'></Argument></Operator></OneWireSensor>
+        <Argument Description='Divisor' Model='Argument&lt;double&gt;' Name='Argument' Type='double' Value='1000' CppName="" Input="1" Routing=""></Argument>
+        <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="1"></Argument></Operator></OneWireSensor>
   </OneWireSensors>
 </Component>
