@@ -19,9 +19,15 @@
   </Signals>
 
   <Alarms>
+    <Alarm Description="A component was suspended!" Model="CDPAlarm" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
   </Alarms>
 
   <Parameters>
+    <Parameter Name="KeepUnusedProperties" Value="1" Unit="[0, 1]" Description="Set to 1 to keep auto generated properties even if not in use by any ui widgets."></Parameter>
   </Parameters>
+
+  <Timers></Timers>
+  
 
 </Component>
